@@ -55,7 +55,7 @@ public class TodoSearchImpl implements TodoSearch{
                         .toList();
 
         return PageResponseDTO.<TodoDTO>withAll()
-                .dotList(dtoList)
+                .dtoList(dtoList)
                 .pageRequestDTO(pageRequestDTO)
                 .totalCount(count)
                 .build();

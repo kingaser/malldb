@@ -89,7 +89,7 @@ public class TodoServiceImpl implements TodoService {
         // 결과를 PageResponseDTO로 처리
 
         return PageResponseDTO.<TodoDTO>withAll()
-                .dotList(dtoList)
+                .dtoList(dtoList)
                 .pageRequestDTO(pageRequestDTO)
                 .totalCount(totalCount)
                 .build();

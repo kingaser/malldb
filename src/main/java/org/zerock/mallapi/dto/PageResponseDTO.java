@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 @Data
 public class PageResponseDTO<E> {
 
-    private List<E> dotList;
+    private List<E> dtoList;
 
     private List<Integer> pageNumList;
 
@@ -21,8 +21,8 @@ public class PageResponseDTO<E> {
     private int totalCount, prevPage, nextPage, totalPage, current;
 
     @Builder(builderMethodName = "withAll")
-    public PageResponseDTO(List<E> dotList, PageRequestDTO pageRequestDTO, long totalCount) {
-        this.dotList = dotList;
+    public PageResponseDTO(List<E> dtoList, PageRequestDTO pageRequestDTO, long totalCount) {
+        this.dtoList = dtoList;
         this.pageRequestDTO = pageRequestDTO;
         this.totalCount = (int) totalCount;
 
