@@ -39,6 +39,9 @@ dependencies {
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 
     implementation 'org.modelmapper:modelmapper:3.2.2'
+
+    // Source: https://mvnrepository.com/artifact/net.coobird/thumbnailator
+    implementation("net.coobird:thumbnailator:0.4.19")
 }
 
 tasks.named('test') {
